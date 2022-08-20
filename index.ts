@@ -12,16 +12,22 @@ let intervalId = setInterval(() => {
   let estadoDiv = document.getElementById('app.estado');
   if (rodada < 8) {
     if (counter < 10) {
+      estado = 'Relaxe';
+    } else {
+      estado = 'Treine!';
     }
     if (counter == 30) {
       counter = 0;
       rodada++;
     }
+  } else {
+    estado = 'Finalizado!';
+    counter = 0;
   }
   estadoDiv.innerHTML = estado;
   counterDiv.innerHTML = counter.toString();
   rodadaDiv.innerHTML = rodada.toString();
-}, 1000);
+}, 10);
 
 //appDiv.innerHTML = `<h1>${title}</h1>
 //<hr/>
