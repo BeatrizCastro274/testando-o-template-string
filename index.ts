@@ -1,5 +1,5 @@
-let title: string = 'Tabata Timer';
-const appDiv: HTMLElement = document.getElementById('app.title');
+let title: string = 'Tabata Timer - Aula 19/08';
+document.getElementById('app.title').innerHTML = title;
 
 let counter = 0;
 let rodada = 0;
@@ -27,7 +27,7 @@ let intervalId = setInterval(() => {
   estadoDiv.innerHTML = estado;
   counterDiv.innerHTML = counter.toString();
   rodadaDiv.innerHTML = rodada.toString();
-}, 10);
+}, 400);
 
 //appDiv.innerHTML = `<h1>${title}</h1>
 //<hr/>
